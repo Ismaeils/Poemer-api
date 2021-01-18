@@ -19,6 +19,7 @@ require('./startup/prod')(app);
 
 
 
-const server = app.listen(config.get('port'), ()=>winston.info(`Server has started at ${config.get('port')}`));
+//const server = app.listen(config.get('port'), ()=>winston.info(`Server has started at ${config.get('port')}`));
+const server = app.listen(process.env.PORT || 8080);
 const edited = "whatever";
 module.exports = server;
