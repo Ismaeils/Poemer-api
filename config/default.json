@@ -1,0 +1,6 @@
+{
+    "name": "Poemer",
+    "jwtPrivateKey": "Kwg6t9rf@",
+    "db": "mongodb+srv://ismaeil:Kwg6t9rfPoemer@poemer.aanbl.mongodb.net/poemer?retryWrites=true&w=majority",
+    "port": 9000
+}
