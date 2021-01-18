@@ -48,11 +48,11 @@ router.get('/google/callback',
           console.log(response);
           //console.log(res);
         
-        // res.set({
-        //     'Content-Type': 'application/json',
-        //     'Authorization': token.token
-        // }).redirect('/auth/google/success');
-        res.send(response);
+        res.set({
+            'Content-Type': 'application/json',
+            'Authorization': token.token
+        }).redirect('https://poemer.herokuapp.com/me');
+        //res.send(response);
     }
     
 });
