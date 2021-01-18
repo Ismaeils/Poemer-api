@@ -11,7 +11,7 @@ var publicKEY  = fs.readFileSync('config/public.key', 'utf8');
 const googleOptions = {
     clientID:     '956610697166-ilj8dp5aiog42vi26nbms0ip9f8topfh.apps.googleusercontent.com',
     clientSecret: '99NH4mEBoeLKKkbnXXaKsHN3',
-    callbackURL: "http://peomerapi.herokuapp.com/api/auth/google/callback",
+    callbackURL: "https://poemerapi.herokuapp.com/api/auth/google/callback",
     passReqToCallback   : true
 };
 
