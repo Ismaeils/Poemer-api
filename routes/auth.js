@@ -50,8 +50,10 @@ router.get('/google/callback',
         
         res.set({
             'Content-Type': 'application/json',
-            'Authorization': token.token
-        }).redirect('https://poemer.herokuapp.com/me');
+            'Authorization': token.token,
+            'Access-Control-Expose-Headers': 'Authorization',
+            'Access-Control-Allow-Headers': 'Authorization, X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept, X-Custom-header'
+        }).redirect(200,'https://poemer.herokuapp.com/me');
         //res.send(response);
     }
     
