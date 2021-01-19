@@ -53,7 +53,7 @@ router.get('/google/callback',
             'Authorization': token.token,
             'Access-Control-Expose-Headers': 'Authorization',
             'Access-Control-Allow-Headers': 'Authorization, X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept, X-Custom-header'
-        }).redirect(200,'https://poemer.herokuapp.com/me');
+        }).redirect('https://poemer.herokuapp.com/me');
         //res.send(response);
     }
     
